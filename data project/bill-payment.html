@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/all.css"> 
+    <!-- <link rel="stylesheet" href="./bill-payment.css"> -->
+    <link rel="stylesheet" href="./style/general.css">
+    <title>Bill Payment</title>
+</head>
+<body>
+    <div class="container">
+        <div class=" flex-body">
+            <div class="sidebar flex">
+                <div class="flex welcome flex-column">
+                    <h2 class="welcome-text">Welcome</h2>
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+                <div class="sidebar-content">
+                    <div class="side-bar-content">
+                        <div class="profile flex flex-column">
+                            <div class="profile-image">
+                                <img src="./dashboard images/avatar.png" alt="" width="50px">
+                            </div>
+                            <div class="username-bal">
+                                <p id="username">Ticoworld</p>
+                                <p id="balance">balance: ₦ 7000.0</p>
+                            </div>
+                        </div>
+                       <a href="">
+                        <div class="sidebar-icon-text flex flex-column dashboard">
+                            <div class="icon">
+                            <i class="fa-sharp fa-solid fa-house-chimney"></i>
+                        </div>
+                        <h4 class="text">Dashboard</h4>   
+                    </div>
+                       </a>
+                       <a href="">
+                        <div class="sidebar-icon-text flex flex-column">
+                            <div class="icon">
+                                <i class="fa-sharp fa-solid fa-signal"></i>
+                            </div>
+                            <h4 class="text">Buy Data</h4>        
+                        </div>
+                       </a>
+                        <a href="">
+                            <div class="sidebar-icon-text flex flex-column">
+                                <div class="icon">
+                                    <i class="fa-solid fa-square-phone-flip"></i>
+                                </div>
+                                <h4 class="text">Buy Airtime</h4>        
+                            </div>
+                        </a>
+                       <a href="">
+                        <div class="sidebar-icon-text flex flex-column">
+                            <div class="icon">
+                                <i class="fa-sharp fa-solid fa-lightbulb"></i>
+                            </div>
+                            <ul class="text">
+                                <p>Utilities Payment</p> 
+                                <li>Bill Payment</li>
+                                <li>Cable Subscription</li>
+                            </ul>        
+                        </div>
+                       </a>
+                       <a href="">
+                        <div class="sidebar-icon-text flex flex-column">
+                            <div class="icon">
+                                <i class="fa-sharp fa-solid fa-credit-card"></i>
+                            </div>
+                            <ul class="text">
+                                <p>Fund Wallet</p> 
+                                <li>Fund with payment gateway (ATM)</li>
+                                <li>Automated Bank Transfer (N50 charge)</li>
+                                <li>Fund with coupon</li>
+                            </ul>        
+                        </div>
+                       </a>
+                        <a href="">
+                            <div class="sidebar-icon-text flex flex-column">
+                                <div class="icon">
+                                    <i class="fa-sharp fa-solid fa-money-bill"></i>
+                                </div>
+                                <h4 class="text">Pricing</h4>        
+                            </div>
+                        </a>
+                        <a href="./account.html">
+                            <div class="sidebar-icon-text flex flex-column">
+                                <div class="icon">
+                                    <i class="fa-sharp fa-solid fa-user"></i>
+                                </div>
+                                <h4 class="text">Account</h4>        
+                            </div>
+                        </a>
+                        <a href="">
+                            <div class="sidebar-icon-text flex flex-column">
+                                <div class="icon">
+                                    <i class="fa-sharp fa-solid fa-gear"></i>
+                                </div>
+                                <h4 class="text">Change Pin</h4>        
+                            </div>
+                        </a>
+                        <a href="">
+                            <div class="sidebar-icon-text flex flex-column">
+                                <div class="icon">
+                                    <i class="fa-sharp fa-solid fa-gear"></i>
+                                </div>
+                                <h4 class="text">Setting</h4>        
+                            </div>
+                        </a>
+                        <a href="">
+                            <div class="sidebar-icon-text flex flex-column">
+                                <div class="icon">
+                                    <i class="fa-sharp fa-solid fa-code"></i>
+                                </div>
+                                <h4 class="text">Developer's API</h4>        
+                            </div>
+                        </a>
+                        <a href="">
+                            <div class="sidebar-icon-text flex flex-column">
+                                <div class="icon">
+                                    <i class="fa-solid fa-right-from-bracket"></i>
+                                </div>
+                                <h4 class="text">Logout</h4>        
+                            </div>
+                        </a>
+                        <p>Version 7.6</p>
+                    </div>       
+                </div>
+                </div>
+            <div class="main-body">
+                <div class="main-body-content">
+                    <div class="flex logo-text-logout flex-column">
+                        <div class="logout-icon flex flex-column">
+                            <div class="icon-logout">
+                                <i class="fa-solid fa-power-off"></i>
+                            </div>
+                            <h4 class="text">Logout</h4> 
+                        </div>
+                    </div>
+                    <h3 class="text-center">Electricity Bill Payment</h3>
+                    <div class="flex flex-column card">
+                        <div class="form-data">
+                                <form action="">
+                                    <label for="networks">Disco name*</label>
+                                    <select name="networks" id="networks">
+                                        <option value="--------">--------</option>
+                                        <option value="Enugu Electric">Enugu Electric</option>
+                                        <option value="Ikeja Electric">Ikeja Electric</option>
+                                        <option value="Abuja Electric">Abuja Electric</option>
+                                        <option value="Kano Electric ">Kano Electric </option>              
+                                        <option value="Portharcourt Electric">Portharcourt Electric</option>
+                                        <option value="Ibadan Electric">Ibadan Electric</option>
+                                        <option value="Kaduna Electric">Kaduna Electric</option>
+                                        <option value="Jos Electric">Jos Electric</option>              
+                                    </select>
+                                    <label for="">Meter Number</label>
+                                    <input type="text">
+                                    <label for="data-type">Meter Type*</label>
+                                    <select name="airtime-type" id="airtime-type">
+                                        <option value="--------">--------</option>
+                                        <option value="prepaid">prepaid</option>
+                                        <option value="postpaid">postpaid</option>
+                                    </select>
+                                    <label for="">Amount*</label>
+                                    <input type="text">
+                                   <label for="">Customer Phone*</label>
+                                    <input type="text" id="customer-phone">
+                                    <p class="customer-phone-info">customer phone number</p>
+                                   <div class="percentage">
+                                    0.5 percent Discount
+                                   </div>
+                                    <input type="submit" value="Validate" id="validate">
+                                </form>
+                        </div> 
+                </div>
+                </div>
+            </div> 
+        </div>
+    </div>
+</body>
+</html>

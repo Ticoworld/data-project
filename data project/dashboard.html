@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/dashboard.css">
+    <link rel="stylesheet" href="css/all.css"> 
+    <title>DashBoard</title>
+</head>
+<body>
+    <div class="container">
+        <div class=" flex-body">
+            <div class="sidebar flex">
+                <div class="flex welcome flex-column">
+                    <h2 class="welcome-text">Welcome</h2>
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+                <div class="sidebar-content">
+                    <div class="side-bar-content">
+                        <div class="profile flex flex-column">
+                            <div class="profile-image">
+                                <img src="./dashboard images/avatar.png" alt="" width="50px">
+                            </div>
+                            <div class="username-bal">
+                                <p id="username">Ticoworld</p>
+                                <p id="balance">balance: ₦ 7000.0</p>
+                            </div>
+                        </div>
+                       <a href="./dashboard.html">
+                        <div class="sidebar-icon-text flex flex-column active">
+                            <div class="icon">
+                            <i class="fa-sharp fa-solid fa-house-chimney"></i>
+                        </div>
+                        <h4 class="text">Dashboard</h4>   
+                    </div>
+                       </a>
+                       <a href="./data.html">
+                        <div class="sidebar-icon-text flex flex-column">
+                            <div class="icon">
+                                <i class="fa-sharp fa-solid fa-signal"></i>
+                            </div>
+                            <h4 class="text">Buy Data</h4>        
+                        </div>
+                       </a>
+                        <a href="./airtime.html">
+                            <div class="sidebar-icon-text flex flex-column">
+                                <div class="icon">
+                                    <i class="fa-solid fa-square-phone-flip"></i>
+                                </div>
+                                <h4 class="text">Buy Airtime</h4>        
+                            </div>
+                        </a>
+                       <a href="">
+                        <div class="sidebar-icon-text flex flex-column">
+                            <div class="icon">
+                                <i class="fa-sharp fa-solid fa-lightbulb"></i>
+                            </div>
+                            <ul class="text">
+                                <p>Utilities Payment</p> 
+                                <li>Bill Payment</li>
+                                <li>Cable Subscription</li>
+                            </ul>        
+                        </div>
+                       </a>
+                       <a href="">
+                        <div class="sidebar-icon-text flex flex-column">
+                            <div class="icon">
+                                <i class="fa-sharp fa-solid fa-credit-card"></i>
+                            </div>
+                            <ul class="text">
+                                <p>Fund Wallet</p> 
+                                <li>Fund with payment gateway (ATM)</li>
+                                <li>Automated Bank Transfer (N50 charge)</li>
+                                <li>Fund with coupon</li>
+                            </ul>        
+                        </div>
+                       </a>
+                        <a href="">
+                            <div class="sidebar-icon-text flex flex-column">
+                                <div class="icon">
+                                    <i class="fa-sharp fa-solid fa-money-bill"></i>
+                                </div>
+                                <h4 class="text">Pricing</h4>        
+                            </div>
+                        </a>
+                        <a href="./account.html">
+                            <div class="sidebar-icon-text flex flex-column">
+                                <div class="icon">
+                                    <i class="fa-sharp fa-solid fa-user"></i>
+                                </div>
+                                <h4 class="text">Account</h4>        
+                            </div>
+                        </a>
+                        <a href="">
+                            <div class="sidebar-icon-text flex flex-column">
+                                <div class="icon">
+                                    <i class="fa-sharp fa-solid fa-gear"></i>
+                                </div>
+                                <h4 class="text">Change Pin</h4>        
+                            </div>
+                        </a>
+                        <a href="">
+                            <div class="sidebar-icon-text flex flex-column">
+                                <div class="icon">
+                                    <i class="fa-sharp fa-solid fa-gear"></i>
+                                </div>
+                                <h4 class="text">Setting</h4>        
+                            </div>
+                        </a>
+                        <a href="">
+                            <div class="sidebar-icon-text flex flex-column">
+                                <div class="icon">
+                                    <i class="fa-sharp fa-solid fa-code"></i>
+                                </div>
+                                <h4 class="text">Developer's API</h4>        
+                            </div>
+                        </a>
+                        <a href="">
+                            <div class="sidebar-icon-text flex flex-column">
+                                <div class="icon">
+                                    <i class="fa-solid fa-right-from-bracket"></i>
+                                </div>
+                                <h4 class="text">Logout</h4>        
+                            </div>
+                        </a>
+                        <p>Version 7.6</p>
+                    </div>       
+                </div>
+                </div>
+            <div class="main-body">
+                <div class="flex logo-text-logout flex-column">
+                    <div class="logo">
+                        <h3>CHIZIK DATA</h3>
+                    </div>
+                    <div class="logout-icon flex flex-column">
+                        <div class="icon-logout">
+                            <i class="fa-solid fa-power-off"></i>
+                        </div>
+                        <h4 class="text">Logout</h4> 
+                    </div>
+                </div>
+                <div class="showcase flex flex-column">
+                    <div class="left-flex-showcase">
+                        <h3>Welcome to CHIZIK DATA</h3>
+                        <h5>Refer people to THEDATAMASTERPLACE and get 2% of their first payment</h5>
+                        <p class="referal-link">Referal Link: https://www.thedatamasterplace.com?referal=Ticoworld <button>copy</button></p>
+                    </div>
+                    <div class="right-flex-showcase">
+                        <button class="fund-wallet">
+                            Fund Wallet
+                        </button>
+                    </div>
+                </div>
+                <div class="special">
+                    <p class="greeting">Good day, <span id="username">Ticoworld</span></p>
+                <div class="package-on">
+                    <p class="text-center">Package : <span id="package">Smart Earner</span></p>
+                </div>
+                <div class="bank-accounts">
+                    <div class="bank-account">
+                    <h2 class="bank-name">Wema Bank</h2>
+                    <h2 class="bank-name">Rolex Bank</h2>
+                    </div>
+                    <div class="bank-details flex flex-column wema">
+                        <div class="content-left">
+                            <img src="./dashboard images/Wema_Bank_Plc.jpg" alt="" >
+                            <p class="acc-no">Account: <span id="account-number">7369071852</span></p>
+                            <p class="acc-name">Account Name: <span id="account-name">CHIZIK DATA - Ticoworld</span></p>
+                            <p class="bank-text">Bank Name: <span id="bank-name">Wema Bank</span></p>
+                            <p class="h-text">AUTOMATED BANK TRANSFER</p>
+                            <small class="small-text">Make transfer to this account to fund wallet</small>
+                        </div>
+                            <div class="content-right">
+                            <h3>₦50</h3>
+                            <p>Charge</p>
+                            </div>
+                    </div>
+                    <div class="bank-details flex flex-column rolex">
+                        <div class="content-left">
+                            <img src="./dashboard images/Rolex-logo.png" alt="">
+                            <p class="acc-no">Account: <span id="account-number">7369071852</span></p>
+                            <p class="acc-name">Account Name: <span id="account-name">CHIZIK DATA - Ticoworld</span></p>
+                            <p class="bank-text">Bank Name: <span id="bank-name">Wema Bank</span></p>
+                            <p class="h-text">AUTOMATED BANK TRANSFER</p>
+                            <small class="small-text">Make transfer to this account to fund wallet</small>
+                        </div>
+                            <div class="content-right">
+                            <h3>₦50</h3>
+                            <p>Charge</p>
+                            </div>
+                    </div>
+                    
+                </div>
+                    <div class="notification-area">
+                        <marquee behavior="" direction="">
+                         Thank you for your continuos patronage and encouragement
+                        </marquee>
+                    </div>
+                <div class="flex flex-column">
+                    <div class="transaction card flex flex-column">
+                        <i class="fa-solid fa-clock-rotate-left"></i>
+                        <p>Transactions</p>
+                    </div>
+                    <div class="wallet-summary card flex flex-column">
+                        <i class="fa-solid fa-clock-rotate-left"></i>
+                        <p>Wallet summary</p>
+                    </div>
+                </div>
+                </div>
+                <div class="container-body">
+                    <div class="grid-3 cards my-data">
+                        <div class="card wallet-bal flex flex-column">
+                            <i class="fa-solid fa-wallet"></i>
+                            <div class="wallet-bal-text">
+                                <h5>Wallet Balance</h5>
+                                <p id="balance">₦ 700.0</p>
+                            </div>
+                        </div>
+                        <div class="card referal-bonus flex flex-column">
+                            <i class="fa-solid fa-coins"></i>
+                            <div class="referal-bonus-text">
+                                <h5>Referral Bonus</h5>
+                            <p id="referral">₦ 700.0</p>
+                            </div>  
+                        </div>
+                        <div class="card total-referal flex flex-column">
+                            <i class="fa-solid fa-user-group"></i>
+                            <div class="referal-bonus-text">
+                                <h5>My Total Referral</h5>
+                            <p id="t-referral">3</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid-3 cards info">
+                        <div class="card message">
+                            <h4>Notification</h4>
+                            <p id="messages">OUR SME PRICE NOW #223 PER GB from admin .</p>
+                            <button>all messages</button>
+                        </div>
+                        <div class="card faqs-area">
+                            <h4>FAQs:</h4>
+                            <p>Please go through them to have a better knowledge of this platform</p>
+                            <button><i class="fa-solid fa-question"></i>FAQs</button>
+                        </div>
+                        <div class="card support">
+                            <h4>Support Team:</h4>
+                            <p>Have anything to say to us? Please Contact our Support Team on WhatsApp</p>
+                            <button id="whatsapp-us"><i class="fa-brands fa-whatsapp"></i>whatsapp us</button>
+                            <button id="whatsapp-group"><i class="fa-brands fa-whatsapp"></i>Join our whatsapp group</button>
+                        </div>
+                    </div>
+                    <div class="all-services cards grid-4">
+                        <div class="card airtime services">
+                            <div class="all-services-image">
+                                <img src="./dashboard images/airtime.svg" alt="">
+                            </div>
+                            <p>Airtime TopUp</p>
+                        </div>
+                        <div class="card buy-Data services">
+                            <div class="all-services-image">
+                                <img src="./dashboard images/data.jpg" alt="" width="80px">
+                            </div>
+                            <p>Buy Data</p>
+                        </div>
+                        <div class="card airtime2cash services">
+                            <div class="all-services-image">
+                                <img src="./dashboard images/airtime2cash.jpg" alt="" width="80px">
+                            </div>
+                            <p>Airtime To Cash</p>
+                        </div>
+                        <div class="card electricity services">
+                            <div class="all-services-image">
+                                <img src="./dashboard images/utility.jpg" alt="" width="80px">
+                            </div>
+                            <p>Electricity bills</p>
+                        </div>
+                        <div class="card cable services">
+                            <div class="all-services-image">
+                                <img src="./dashboard images/cable.jpg" alt="" width="80px">
+                            </div>
+                            <p>Cable Subscription</p>
+                        </div>
+                        <div class="card wallet services">
+                            <div class="all-services-image">
+                                <img src="./dashboard images/fundacc.jfif" alt="" width="80px">
+                            </div>
+                            <p>Bonus to wallet</p>
+                        </div>
+                        <div class="card sms services">
+                            <div class="all-services-image">
+                                <img src="./dashboard images/sms.png" alt="" width="80px">
+                            </div>
+                            <p>Bulk SMS</p>
+                        </div>
+                        <div class="card referral services">
+                            <div class="all-services-image">
+                                <img src="./dashboard images/referral.png" alt="" width="80px">
+                            </div>
+                            <p>My Referrals</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- GetButton.io widget -->
+<script type="text/javascript">
+    (function () {
+        var options = {
+            whatsapp: "+2347026601550", // WhatsApp number
+            call_to_action: "Message us ", // Call to action
+            button_color: "#FF6550", // Color of button
+            position: "left", // Position may be 'right' or 'left'
+        };
+        var proto = 'https:', host = "getbutton.io", url = proto + '//static.' + host;
+        var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = url + '/widget-send-button/js/init.js';
+        s.onload = function () { WhWidgetSendButton.init(host, proto, options); };
+        var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x);
+    })();
+</script>
+<!-- /GetButton.io widget -->
+    <script>
+        window.onload(()=>{
+            
+        })
+    </script>
+</body>
+</html>

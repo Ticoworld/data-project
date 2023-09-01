@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/login.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="login-modal">
+            <div class="logo text-center">
+                <a href="./index.html"><h2>CHIZIK DATA</h2></a>
+            </div>
+            <h3 class="login-p text-center">Sign Up</h3>
+            <form action="" id="login-form">
+                <label for="UserName">Username:</label>
+                <input type="text" id="name-input">
+                <label for="pwd" >Password:</label>
+                <input type="password" name="" id="password-input">
+                <p class="no-account"><a href="#">Forgotten Password?</a></p>
+                <input type="submit" value="Login" id="submit">
+            </form>
+            <p class="login-2 text-center">Dont Have an account? <a href="./register.html">Sign Up</a></p>
+        </div>
+        </div>
+        <script>
+            let name= ''
+            let password = ''
+            document.getElementById('name-input').addEventListener('change',(e)=>{
+                    name = e.target.value
+                    console.log(name)
+                })
+            document.getElementById('password-input').addEventListener('change',(e)=>{
+                    password = e.target.value
+                })
+            const loginForm = document.getElementById('login-form')
+            loginForm.addEventListener('submit',(e)=>{
+                e.preventDefault()
+                if(name !== undefined && name !== '' && password !== undefined && password !== ''){
+                    const login = async ()=>{
+                        console.log(`${password} and ${name}`)
+                        const req = await fetch('http://localhost:5000/login', {
+                            method:'POST',
+                            headers:{
+                                'Content-Type':'Application/json'
+                            },
+                            body:{
+                                password:password,
+                                name:name
+                            }
+                        })
+
+                        const res = await req.json()
+                        if(res.status == 200){
+                            alert('successful')
+                            window.location.href = '/dashboard.html'
+                        }
+                        else{
+                            alert('request unsuccessful')
+                        }
+                    }
+                   login()
+                } else{
+                        alert('invalid details, try again')
+                    }
+            })
+        </script>
+</body>
+</html>

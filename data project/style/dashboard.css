@@ -1,0 +1,517 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap');
+
+:root {
+    --primary-color:#5418A1;
+    --secondary-color:#5118a1;
+    --icon-color:#9629e6;
+    --head-color:#1b2e4b;
+    --paragraph-color:#6d6c6c;
+    --white-color:#f5f5f5;
+    --grey-color:#ece8e8c7;
+    --icon-background:#e4c9f9;
+    --footer-li:#bebebec2;
+    --sidebar-background:#1a2035;
+    --sidebar-color:#8d9498;
+    --button-background:#ffb14f;
+}
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+body {
+    font-family: 'lato', sans-serif;
+}
+.flex {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-column {
+    flex-direction: row;
+}
+
+.flex-body{
+    flex-direction: row;
+    justify-content: space-between;
+    gap: none;
+}
+
+.grid-3{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    justify-content: space-between;
+    gap: 30px;
+    margin-bottom: 50px;
+}
+
+.grid-4 {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 30px;
+    margin-bottom: 50px;
+  
+}
+
+.text-center {
+    text-align: center;
+}
+
+.sidebar {
+    position: fixed;
+    background:var(--sidebar-background) ;
+    width:250px;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.sidebar-content {
+    padding: 20px 15px;
+    color: var(--sidebar-color);
+    overflow: auto;
+    margin: 8px 2px;
+    visibility: hidden;
+}
+
+.side-bar-content,
+.sidebar-content:hover {
+    visibility: visible;
+}
+
+.sidebar-content::-webkit-scrollbar {
+    width: 0.45em;
+}
+.sidebar-content::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(233, 229, 229, 0.9);
+    border-radius: 10px;
+}
+.sidebar-content::-webkit-scrollbar-thumb {
+    background-color: darkgrey;
+    border-radius: 10px;
+}
+.side-bar-content > a {
+    color:var(--sidebar-color);
+}
+.welcome {
+    background: var(--primary-color);
+    padding: 20px 15px;
+    align-items: center;
+    justify-content: space-between;
+    color: var(--white-color);
+    border-bottom: 1px solid var(--white-color);
+    position: sticky;
+    top: 0;
+}
+
+.welcome i{
+    font-size: 1.3rem;
+}
+
+.welcome h2{
+    font-size: 1.2rem;
+}
+
+.profile {
+    padding: 0 15px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #3f3f3f;
+}
+
+.profile-image img{
+    width: 37px;
+    margin-right:10px;
+}
+
+#username {
+    font-weight: 600;
+    padding-bottom: 7px;
+    font-size: 0.9rem;
+}
+
+#balance {
+    font-size: 0.75rem;
+    font-weight: 500;
+}
+
+.sidebar-icon-text {
+    margin: 12px 0;
+    padding: 14px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.sidebar-icon-text:hover{
+    background: #c0b9b960;
+    color: var(--white-color);
+    font-size: 1.1rem;
+}
+
+.active {
+    color:var(--head-color);
+    background: var(--white-color);
+}
+
+.sidebar-icon-text .text{
+    font-size:0.9rem ;
+    font-weight: 500;
+}
+
+.icon {
+    padding-right: 20px;
+    font-size: 1.1rem;
+}
+
+
+
+/* DASHBOARD */
+.main-body {
+    margin-left: 250px;
+    background: var(--white-color);
+}
+
+.logout-icon {
+    gap: 5px;
+}
+
+.logo-text-logout {
+    background: var(--secondary-color);
+    padding: 20px 15px;
+    align-items: center;
+    justify-content: space-between;
+    color: var(--white-color);
+    box-shadow: 1px 1px 3px #29292971;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+
+
+
+.showcase {
+    justify-content: space-between;
+    background: var(--primary-color);
+    padding: 100px 30px;
+    color: var(--white-color);
+}
+
+.left-flex-showcase {
+    line-height: 2rem;
+}
+
+.fund-wallet {
+    color: var(--white-color);
+    background: var(--button-background);
+    border: none;
+    padding: 15px 20px;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.right-flex-showcase {
+    align-self: center;
+    justify-self: flex-start;
+    padding-right: 90px;
+}
+
+.left-flex-showcase h5{
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.referal-link {
+    font-size: 0.85rem;
+}
+
+.referal-link button{
+    background: #000000c0;
+    color: var(--white-color);
+    padding:4px 7px;
+    cursor: pointer;
+    border: none;
+    border-radius: 50px;
+}
+
+/* SPECIAL */
+
+.special {
+    margin: 0 30px;
+    padding: 7px 0px;
+    background: #fff;
+    border-radius: 5px;
+    margin-top: -30px;
+    box-shadow: 1px 1px 20px #7977775e;
+    border-radius: 5px;
+    margin-bottom: 50px;
+}
+
+.greeting {
+    font-size: 1.2rem;
+    padding: 20px 15px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.greeting #username {
+    font-size: 20px;
+    color: var(--head-color);
+}
+
+.package-on {
+    font-size: 1.3rem;
+    padding: 20px 0;
+    color: var(--head-color);
+    font-weight: 700;
+    padding-bottom: 50px;
+}
+
+
+/* BANK ACCOUNT */
+
+.bank-accounts {
+    padding-bottom: 30px;
+}
+.bank-account {
+    display: flex;
+}
+
+.bank-name {
+    padding: 5px 12px;
+    font-size: 1.2rem;
+    color: var(--paragraph-color);
+}
+
+.bank-details {
+    padding: 20px 15px;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--white-color);
+    padding-bottom: 30px;
+    /* display: none; */
+}
+
+.bank-details img {
+    width: 100px;
+}
+
+.bank-details .acc-no{
+    font-size: 1.57rem;
+    padding: 15px 0;
+    font-weight: 600;
+}
+.bank-details .acc-name{
+    font-size: 1.2rem;
+    padding: 5px 0;
+    font-weight: 600;
+}
+.bank-details .bank-text{
+    font-size: 1.1rem;
+    padding: 4px 0;
+    font-weight: 600;
+}
+.bank-details .h-text{
+    font-size: 0.9rem;
+    padding-top: 9px;
+    color: var(--paragraph-color);
+    font-weight: 600;
+}
+.bank-details .small-text{
+    font-size: 0.8rem;
+    padding-top: 7px;
+    font-weight: 600;
+}
+
+.wema {
+    background: var(--primary-color);
+    border-radius: 5px;
+    display: none;
+}
+
+.rolex {
+    background: var(--secondary-color);
+    border-radius: 5px;
+}
+
+
+
+
+/* NOTIFICATION AREA */
+
+.notification-area {
+    /* height: 50px; */
+    color: blue;
+    font-weight: 600;
+    font-size: 2rem;
+}
+
+.card {
+    padding: 15px 20px;
+    box-shadow: 1px 1px 20px #7977775e;
+    border-radius: 5px;
+}
+
+.transaction , .wallet-summary{
+    margin-right: 30px;
+    padding-right: 70px;
+    margin-bottom: 10px;
+    
+}
+.transaction i {
+    padding: 10px;
+    background: var(--primary-color);
+    border-radius: 5px;
+    color: var(--white-color);
+    margin-right: 10px;
+}
+
+.transaction p {
+    align-self: center;
+    font-weight: 600;
+    font-size: 0.9rem;
+    color: var(--head-color);
+}
+.wallet-summary i {
+    padding: 10px;
+    background: var(--button-background);
+    border-radius: 5px;
+    color: var(--white-color);
+    margin-right: 8px;
+}
+
+.wallet-summary p {
+    align-self: center;
+    font-weight: 600;
+    font-size: 0.9rem;
+    color: var(--head-color);
+}
+
+.container-body {
+        max-width: 1200px;
+        margin: 0 auto;
+        overflow: auto;
+        padding:40px 20px;
+}
+
+.wallet-bal, .referal-bonus, .total-referal {
+    align-items: center;
+}
+.wallet-bal i, .referal-bonus i, .total-referal i{
+    font-size: 2rem;
+    padding: 13px;
+    color: var(--white-color);
+    background: #1572e8;
+    border-radius: 5px;
+    margin-right:15px ;
+}
+
+.referal-bonus i {
+    background-color: #48abf7;
+}
+.total-referal i {
+    background-color: var(--secondary-color);
+}
+.wallet-bal h5, .referal-bonus h5, .total-referal h5 {
+    color: var(--paragraph-color);
+    padding-bottom: 10px;
+    font-size: 1rem;
+}
+
+.wallet-bal #balance, .referal-bonus #referral, .total-referal #t-referral {
+    font-size: 1rem;
+    color: var(--sidebar-background);
+}
+
+
+.message, .faqs-area, .support {
+    background: var(--primary-color);
+    color: var(--white-color);
+}
+
+.message h4{
+    padding: 7px 0;
+    font-size: 1.2rem;
+    font-weight: 600px;
+    letter-spacing: 1.5px;
+}
+
+.message #messages {
+    padding: 9px 0;
+}
+
+.message button {
+    background: var(--button-background);
+    color: var(--white-color);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+.faqs-area button {
+    background: #1572e8;;
+    color: var(--white-color);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+}
+
+.faqs-area h4 {
+    padding: 7px 0;
+    font-size: 1.2rem;
+    font-weight: 600px;
+    letter-spacing: 1.5px
+}
+
+.faqs-area p {
+    padding: 9px 0;
+}
+
+.info {
+    grid-auto-rows: minmax(100px, auto);
+}
+
+.support h4 {
+    padding: 7px 0;
+    font-size: 1.2rem;
+    font-weight: 600px;
+    letter-spacing: 1.5px
+}
+.support p {
+    padding: 9px 0;
+}
+
+#whatsapp-us, #whatsapp-group {
+    display: block;
+    background: #3cd140;
+    padding: 12px 20px;
+    color: var(--white-color);
+    border: none;
+    margin-top: 15px;
+    border-radius: 3px;
+    font-size: 0.8rem;
+}
+
+#whatsapp-us i, #whatsapp-group i {
+    padding-right: 5px;
+}
+
+.services {
+    background: #ffffff;
+    text-align: center;
+    padding-bottom: 30px;
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--head-color);
+}
+
+.all-services-image img {
+    width: 90px;
+}

@@ -1,0 +1,42 @@
+:root {
+    --primary-color:#5418A1;
+    --secondary-color:#5118a1;
+    --icon-color:#9629e6;
+    --head-color:#1b2e4b;
+    --paragraph-color:#6d6c6c;
+    --white-color:#f5f5f5;
+    --grey-color:#ece8e8c7;
+    --icon-background:#e4c9f9;
+    --footer-li:#bebebec2;
+    --sidebar-background:#1a2035;
+    --sidebar-color:#8d9498;
+    --button-background:#ffb14f;
+}
+
+.update-account {
+    background-color: var(--primary-color);
+    padding: 12px 19px;
+    border: none;
+    font-size: 1rem;
+    color: var(--white-color);
+    border-radius: 3px;
+    margin-top: 50px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    padding: 20px;
+}
+
+th {
+    text-align: left;
+}
+
+tr {
+    border-bottom: 1px solid var(--white-color);
+}
+

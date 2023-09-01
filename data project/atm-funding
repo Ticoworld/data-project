@@ -1,0 +1,118 @@
+ <div class=" flex-body">
+            <div class="sidebar flex">
+                <div class="flex welcome flex-column">
+                    <h2 class="welcome-text">Welcome</h2>
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+                <div class="sidebar-content">
+                    <div class="side-bar-content">
+                        <div class="profile flex flex-column">
+                            <div class="profile-image">
+                                <img src="./dashboard images/avatar.png" alt="" width="50px">
+                            </div>
+                            <div class="username-bal">
+                                <p id="username">Ticoworld</p>
+                                <p id="balance">balance: ₦ 7000.0</p>
+                            </div>
+                        </div>
+                       <a href="./dashboard.html">
+                        <div class="sidebar-icon-text flex flex-column active">
+                            <div class="icon">
+                            <i class="fa-sharp fa-solid fa-house-chimney"></i>
+                        </div>
+                        <h4 class="text">Dashboard</h4>   
+                    </div>
+                       </a>
+                       <a href="./data.html">
+                        <div class="sidebar-icon-text flex flex-column">
+                            <div class="icon">
+                                <i class="fa-sharp fa-solid fa-signal"></i>
+                            </div>
+                            <h4 class="text">Buy Data</h4>        
+                        </div>
+                       </a>
+                        <a href="./airtime.html">
+                            <div class="sidebar-icon-text flex flex-column">
+                                <div class="icon">
+                                    <i class="fa-solid fa-square-phone-flip"></i>
+                                </div>
+                                <h4 class="text">Buy Airtime</h4>        
+                            </div>
+                        </a>
+                       <a href="">
+                        <div class="sidebar-icon-text flex flex-column">
+                            <div class="icon">
+                                <i class="fa-sharp fa-solid fa-lightbulb"></i>
+                            </div>
+                            <ul class="text">
+                                <p>Utilities Payment</p> 
+                                <li>Bill Payment</li>
+                                <li>Cable Subscription</li>
+                            </ul>        
+                        </div>
+                       </a>
+                       <a href="">
+                        <div class="sidebar-icon-text flex flex-column">
+                            <div class="icon">
+                                <i class="fa-sharp fa-solid fa-credit-card"></i>
+                            </div>
+                            <ul class="text">
+                                <p>Fund Wallet</p> 
+                                <li>Fund with payment gateway (ATM)</li>
+                                <li>Automated Bank Transfer (N50 charge)</li>
+                                <li>Fund with coupon</li>
+                            </ul>        
+                        </div>
+                       </a>
+                        <a href="">
+                            <div class="sidebar-icon-text flex flex-column">
+                                <div class="icon">
+                                    <i class="fa-sharp fa-solid fa-money-bill"></i>
+                                </div>
+                                <h4 class="text">Pricing</h4>        
+                            </div>
+                        </a>
+                        <a href="./account.html">
+                            <div class="sidebar-icon-text flex flex-column">
+                                <div class="icon">
+                                    <i class="fa-sharp fa-solid fa-user"></i>
+                                </div>
+                                <h4 class="text">Account</h4>        
+                            </div>
+                        </a>
+                        <a href="">
+                            <div class="sidebar-icon-text flex flex-column">
+                                <div class="icon">
+                                    <i class="fa-sharp fa-solid fa-gear"></i>
+                                </div>
+                                <h4 class="text">Change Pin</h4>        
+                            </div>
+                        </a>
+                        <a href="">
+                            <div class="sidebar-icon-text flex flex-column">
+                                <div class="icon">
+                                    <i class="fa-sharp fa-solid fa-gear"></i>
+                                </div>
+                                <h4 class="text">Setting</h4>        
+                            </div>
+                        </a>
+                        <a href="">
+                            <div class="sidebar-icon-text flex flex-column">
+                                <div class="icon">
+                                    <i class="fa-sharp fa-solid fa-code"></i>
+                                </div>
+                                <h4 class="text">Developer's API</h4>        
+                            </div>
+                        </a>
+                        <a href="">
+                            <div class="sidebar-icon-text flex flex-column">
+                                <div class="icon">
+                                    <i class="fa-solid fa-right-from-bracket"></i>
+                                </div>
+                                <h4 class="text">Logout</h4>        
+                            </div>
+                        </a>
+                        <p>Version 7.6</p>
+                    </div>       
+                </div>
+                </div>
